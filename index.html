@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruan Pablo | Portfólio</title>
+    
+    <!-- Tailwind CSS para Estilização -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome para Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts (Inter) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Arquivo CSS Externo -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Configuração do Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            light: '#60a5fa', 
+                            DEFAULT: '#3b82f6', 
+                            dark: '#1e3a8a', 
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="antialiased selection:bg-brand selection:text-white flex flex-col min-h-screen">
+
+    <!-- Navegação -->
+    <nav id="navbar" class="fixed w-full z-50 glass-card transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-xl font-bold tracking-wider text-white hover:text-brand-light transition-colors">RP</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#inicio" class="hover:text-brand-light px-3 py-2 rounded-md text-sm font-medium transition-colors">Início</a>
+                        <a href="#sobre" class="hover:text-brand-light px-3 py-2 rounded-md text-sm font-medium transition-colors">Sobre</a>
+                        <a href="#experiencia" class="hover:text-brand-light px-3 py-2 rounded-md text-sm font-medium transition-colors">Experiência</a>
+                        <a href="#contato" class="hover:text-brand-light px-3 py-2 rounded-md text-sm font-medium transition-colors">Contato</a>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <a href="#contato" class="bg-brand hover:bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors">
+                        Contato
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="pt-32 pb-20 md:pt-48 md:pb-32 flex flex-col items-center justify-center text-center px-4 fade-in">
+        <div class="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-brand shadow-[0_0_15px_rgba(59,130,246,0.5)] overflow-hidden mb-6 hover:scale-105 transition-transform duration-300">
+            <img src="https://placehold.co/400x400/1e293b/ffffff?text=RP" alt="Ruan Pablo" class="w-full h-full object-cover">
+        </div>
+        
+        <h1 class="text-4xl md:text-6xl font-bold text-white mb-4 tracking-tight">
+            Ruan Pablo
+        </h1>
+        <p class="text-lg md:text-2xl text-slate-400 mb-6 max-w-2xl font-light">
+            Estudante de ADS (4º período) <span class="text-brand-light">&</span> Profissional de TI
+        </p>
+        <div class="flex items-center text-slate-500 mb-8">
+            <i class="fas fa-map-marker-alt mr-2 text-brand-light"></i>
+            <span>Caruaru, PE</span>
+        </div>
+        <div class="flex gap-4">
+            <a href="#experiencia" class="bg-brand hover:bg-blue-600 text-white px-6 py-3 rounded-full font-medium transition-all transform hover:scale-105 shadow-lg">
+                Ver Experiência
+            </a>
+            <a href="#contato" class="glass-card hover:bg-slate-700 text-white px-6 py-3 rounded-full font-medium transition-all transform hover:scale-105">
+                Falar Comigo
+            </a>
+        </div>
+    </section>
+
+    <!-- Sobre Mim Section (ATUALIZADA) -->
+    <section id="sobre" class="py-20 bg-slate-800/50">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-white mb-8 text-center flex items-center justify-center gap-3">
+                <i class="fas fa-user-astronaut text-brand-light"></i> Sobre Mim
+            </h2>
+            
+            <div class="glass-card rounded-2xl p-8 md:p-10 shadow-xl relative overflow-hidden card-zoom">
+                <div class="absolute -top-10 -right-10 w-40 h-40 bg-brand rounded-full opacity-10 blur-3xl"></div>
+                <div class="absolute -bottom-10 -left-10 w-40 h-40 bg-purple-500 rounded-full opacity-10 blur-3xl"></div>
+
+                <div class="relative z-10 space-y-6 text-lg text-slate-300 leading-relaxed">
+                    <p>
+                        Sou um profissional de Tecnologia da Informação com foco em inovação, suporte de excelência e resolução ágil de problemas. Atualmente, busco aprimorar minha base técnica cursando o <strong>4º período de Análise e Desenvolvimento de Sistemas (ADS) na Faculdade Anhanguera</strong>.
+                    </p>
+                    <p>
+                        Minha trajetória é marcada pela multidisciplinaridade: alio minha atuação técnica — garantindo a estabilidade e segurança de infraestruturas de TI complexas — à minha experiência trabalhando como <strong>modelo profissional</strong>. Essa vivência multifacetada me proporcionou uma excelente capacidade de comunicação, raciocínio lógico aguçado e inteligência emocional para lidar com situações de alta pressão no ambiente corporativo.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiência Section (ATUALIZADA) -->
+    <section id="experiencia" class="py-20">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-white mb-12 text-center flex items-center justify-center gap-3">
+                <i class="fas fa-briefcase text-brand-light"></i> Experiência & Conquistas
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Card 1: Trabalho Atual -->
+                <div class="glass-card rounded-2xl p-6 border-l-4 border-l-brand card-zoom">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 rounded-full bg-slate-700 flex items-center justify-center text-brand-light text-xl">
+                            <i class="fas fa-hospital-user"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white">Assistente de TI</h3>
+                            <p class="text-sm text-slate-400">Hospital Mestre Vitalino • Atual</p>
+                        </div>
+                    </div>
+                    <p class="text-slate-300">
+                        Suporte técnico aos usuários no sistema MV e manutenção de hardware (computadores e impressoras). Gerenciamento de acessos via Active Directory, incluindo redefinição de senhas e gestão de permissões de pastas de rede.
+                    </p>
+                </div>
+
+                <!-- Card 2: Trabalho Anterior -->
+                <div class="glass-card rounded-2xl p-6 border-l-4 border-l-emerald-400 card-zoom">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 rounded-full bg-slate-700 flex items-center justify-center text-emerald-400 text-xl">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white">Suporte de TI</h3>
+                            <p class="text-sm text-slate-400">Hospital Memorial de PE • 11 meses</p>
+                        </div>
+                    </div>
+                    <p class="text-slate-300">
+                        Atendimento aos usuários no sistema MV e manutenção de equipamentos. Atuação na infraestrutura de CFTV (instalação de câmeras e configuração de DVR) e administração de usuários via Active Directory.
+                    </p>
+                </div>
+
+        </div>
+    </section>
+
+    <!-- Rodapé / Contato -->
+    <footer id="contato" class="mt-auto bg-slate-900 border-t border-slate-800 pt-16 pb-8">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-2xl font-bold text-white mb-6">Vamos Conectar?</h2>
+            <p class="text-slate-400 mb-8 max-w-lg mx-auto">
+                Estou sempre aberto a novas oportunidades, conexões na área de TI ou parcerias. Sinta-se à vontade para me acompanhar nas redes sociais.
+            </p>
+            
+            <div class="flex justify-center gap-6 mb-12">
+                <!-- Instagram -->
+                <a href="https://instagram.com/ruanpablo06_" target="_blank" class="w-14 h-14 rounded-full glass-card flex items-center justify-center text-2xl text-slate-300 hover:text-pink-500 hover:scale-110 transition-all shadow-lg">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <!-- LinkedIn -->
+                <a href="#" target="_blank" class="w-14 h-14 rounded-full glass-card flex items-center justify-center text-2xl text-slate-300 hover:text-blue-500 hover:scale-110 transition-all shadow-lg">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <!-- GitHub -->
+                <a href="#" target="_blank" class="w-14 h-14 rounded-full glass-card flex items-center justify-center text-2xl text-slate-300 hover:text-white hover:scale-110 transition-all shadow-lg">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            
+            <p class="text-slate-600 text-sm">
+                &copy; 2026 Ruan Pablo. Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Arquivo JavaScript Externo -->
+    <script src="script.js"></script>
+</body>
+</html>
